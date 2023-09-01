@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meu projeto Bootstrap</title>
+
+    <!-- nome do autor -->
+    <meta name="author" content="Alex Machado Ribeiro" />
+
+    <!-- indexação dos mecanismos de busca -->
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="senai, alex, machado, ribeiro, front-end, front, end, programação, programacao, programaçao, programacão, curso, sig, bootstrap, resposnivo, nav, navbar, menu, carrosel, carousel" />
+    <meta name="description" content="Esta página é um teste feito com Boostrap." />
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Meu CSS -->
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+
+    <!-- favicon -->
+    <link href="imagens/icon.png" rel="shortcut icon" type="image/png" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark menu-borda" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="imagens/icon.png" alt="Bootstrap" width="30" height="24">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cadastro.html">Cadastro</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- fim do navbar -->
+
+    <!-- carrosel -->
+    <div id="carouselExampleIndicators" class="carousel slide sombra-carrosel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagens/carrosel01.jpg" class="d-block w-100" alt="Carrosel 01">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/carrosel02.jpg" class="d-block w-100" alt="Carrosel 02">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/carrosel03.jpg" class="d-block w-100" alt="Carrosel 03">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- fim do carrosel -->
+
+    <!-- conteúdo principal da página -->
+    <main class="mt-5">
+        <div class="container">
+            <section>
+                <div class="row">
+                    <h2>Seção de cards</h2>
+                    <hr />
+                    <article class="col-md-3 col-12">
+                        <div class="card text-bg-success mb-3">
+                            <div class="card-header">TI</div>
+                            <div class="card-body">
+                              <h5 class="card-title">Área que mais cresce no mundo</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum porro aliquid ipsum eos quaerat nesciunt voluptates maxime, mollitia at atque! Tenetur, ipsum dicta vero velit soluta nisi ullam natus distinctio?</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-3 col-12">
+                        <div class="card text-bg-success mb-3">
+                            <div class="card-header">Profissões</div>
+                            <div class="card-body">
+                              <h5 class="card-title">Cargos de TI que mais bombam no momento</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo repudiandae minus impedit quas cumque cum doloribus dignissimos, possimus perspiciatis ducimus nam. Corrupti quae consectetur perferendis architecto placeat consequuntur, ex sequi.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-3 col-12">
+                        <div class="card text-bg-success mb-3">
+                            <div class="card-header">Cursos</div>
+                            <div class="card-body">
+                              <h5 class="card-title">Melhores cursos da área de TI</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facere amet, adipisci quasi ut, totam voluptates iure tempora, rerum praesentium numquam explicabo officia veritatis ipsam unde obcaecati veniam earum quae.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-3 col-12">
+                        <div class="card text-bg-success mb-3">
+                            <div class="card-header">Dicas</div>
+                            <div class="card-body">
+                              <h5 class="card-title">Melhores dicas da área</h5>
+                              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt perspiciatis eius ipsum voluptatem animi inventore modi neque autem. Similique non dolorum a sed quas quia eius aperiam asperiores quidem consequuntur.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- fim do conteúdo principal da página -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-body-secondary">© 2023 Company, Inc</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="imagens/icon.png" alt="Bootstrap" width="30" height="24">
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+          </ul>
+        </footer>
+      </div>
+    </footer>
+    <!-- fim do footer -->
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
